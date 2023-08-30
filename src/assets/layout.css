@@ -10,7 +10,6 @@ header {
   left: 50%;
   transform: translateX(-50%);
 }
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -28,7 +27,7 @@ header {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  gap: 3px;
+  gap: 6px;
 }
 .dark p {
   font-weight: 500;

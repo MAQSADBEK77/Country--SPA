@@ -6,10 +6,7 @@ function Country() {
   const countryName = window.location.href.substring(
     window.location.href.indexOf("?") + 1
   );
-  const {
-    data: child,
-    isPending,
-  } = useFetch(
+  const { data: child, isPending } = useFetch(
     `https://countries-api-v7sn.onrender.com/countries/slug/${countryName}`
   );
   if (!isPending) {
