@@ -107,7 +107,7 @@
 }
 @media screen and (max-width: 1100px) {
   .back {
-    margin-top: 120px;
+    margin-top: 90px;
   }
   .country {
     flex-direction: column;
