@@ -1,0 +1,35 @@
+header {
+  width: 100%;
+  background-color: var(--white);
+  padding-top: 23px;
+  padding-bottom: 24px;
+  box-shadow: 0px 2px 4px 0px var(--black05);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-color);
+}
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+.dark {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 3px;
+}
+.dark p {
+  font-weight: 500;
+}

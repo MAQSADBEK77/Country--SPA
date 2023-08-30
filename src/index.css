@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100;200;300;400;500;600;800;900&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  background-color: var(--bg-white);
+}
+:root {
+  --whitee: #ffffff;
+  --blackk05: rgba(0, 0, 0, 0.05);
+  --blackk: #000000;
+  --bg-whitee: #fafafa;
+  --text-colorr: #111517;
+  --search-textt: #848484;
+  --whitee-d: #2b3844;
+  --blackk05-d: rgba(0, 0, 0, 0.06);
+  --blackk-d: #ffffff;
+  --bg-whitee-d: #202c36;
+  --text-colorr-d: #ffffff;
+  --search-textt-d: #ffffff;
+}
+body.light {
+  --white: var(--whitee);
+  --black05: var(--blackk05);
+  --black: var(--blackk);
+  --bg-white: var(--bg-whitee);
+  --text-color: var(--text-colorr);
+  --search-text: var(--search-textt);
+}
+body.dark {
+  --white: var(--whitee-d);
+  --black05: var(--blackk05-d);
+  --black: var(--blackk-d);
+  --bg-white: var(--bg-whitee-d);
+  --bg-black: var(--bg-blackk-d);
+  --text-color: var(--text-colorr-d);
+  --search-text: var(--search-textt-d);
+  --icon-d: var(var(--icon-d))
+}
+body.light .dark svg {
+  transition: all .6s;
+}
+body.dark .dark svg {
+  transition: all .6s;
+  transform: rotate(180deg);
+  transform: rotate(-360deg) scale(110%);
+}
+.container {
+  max-width: 1333px;
+  padding: 0 27px;
+  margin: 0 auto;
+}
+.d-n {
+  display: none;
+}
+svg {
+  fill: var(--search-text);
+}
