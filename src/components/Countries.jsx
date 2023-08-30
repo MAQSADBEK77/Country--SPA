@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 function Countries({ data, isPending, isError }) {
+  console.log();
+  let animation = window.innerWidth > 700;
   if (!isPending) {
     return (
       <>
@@ -23,8 +25,8 @@ function Countries({ data, isPending, isError }) {
               <Link
                 key={child._id}
                 to={"/country?" + child.name.slug}
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
+                data-aos={animation && "fade-up"}
+                data-aos-anchor-placement={animation && "top-bottom"}
                 className="card">
                 <img src={child.flags.svg} />
                 <h1>{child.name.common}</h1>
