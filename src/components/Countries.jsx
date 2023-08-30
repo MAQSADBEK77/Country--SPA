@@ -24,7 +24,7 @@ function Countries({data, isPending, isError}) {
                 key={child.id}
                 to={"/country?" + child.name.slug}
                 data-aos="fade-up"
-                data-aos-anchor-placement="center-bottom"
+                data-aos-anchor-placement="top-bottom"
                 className="card">
                 <img src={child.flags.svg} />
                 <h1>{child.name.common}</h1>
