@@ -1,6 +1,7 @@
 import "./country.css";
 import { useFetch } from "../hook/useFetch";
 import { Link } from "react-router-dom";
+import { Fragment } from "react";
 function Country() {
   const countryName = window.location.href.substring(
     window.location.href.indexOf("?") + 1
@@ -8,23 +9,19 @@ function Country() {
   const {
     data: child,
     isPending,
-    isError,
   } = useFetch(
     `https://countries-api-v7sn.onrender.com/countries/slug/${countryName}`
   );
   if (!isPending) {
     return (
       <>
-        <div class="lds-ripple">
+        <div className="lds-ripple">
           <div></div>
           <div></div>
         </div>
         <div className="backdrop"></div>
       </>
     );
-  }
-  if (isError) {
-    return <h1 className="error">Page not found :(</h1>;
   }
   return (
     <div className="container">
@@ -81,7 +78,15 @@ function Country() {
                 <p>
                   Languages:{" "}
                   <span>
-                    {child.languages.map((lealunge) => lealunge + ", ")}
+                    {child.languages.map((lealunge, index) => {
+                      var delimiter =
+                        index === child.languages.length - 1 ? "." : ", ";
+                      return (
+                        <Fragment key={lealunge.length}>
+                          {lealunge + delimiter}
+                        </Fragment>
+                      );
+                    })}
                   </span>
                 </p>
               </div>

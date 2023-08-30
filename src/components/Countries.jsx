@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-function Countries({data, isPending, isError}) {
+function Countries({ data, isPending, isError }) {
   if (!isPending) {
     return (
       <>
-        <div class="lds-ripple">
+        <div className="lds-ripple">
           <div></div>
           <div></div>
         </div>
@@ -21,7 +21,7 @@ function Countries({data, isPending, isError}) {
           data.data.map((child) => {
             return (
               <Link
-                key={child.id}
+                key={child._id}
                 to={"/country?" + child.name.slug}
                 data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"

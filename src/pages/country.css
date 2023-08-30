@@ -114,9 +114,7 @@
     gap: 44px;
   }
   .contry-left,
-  .country-right {
-    width: 100%;
-  }
+  .country-right,
   .country-right-bottom p {
     width: 100%;
   }
