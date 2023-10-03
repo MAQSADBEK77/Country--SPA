@@ -15,5 +15,3 @@
 4. After the packages are installed, type npm run dev in the terminal and wait for a while.
 
 5. The terminal will give you a special url address, open it in the browser. ok :)
-
-All rights reserved 
