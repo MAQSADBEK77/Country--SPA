@@ -1,6 +1,6 @@
 # Comfy Store implemented with React redux
 
-I have done this project very well. In this project I used skills like React, TailwindCSS, DaisyUI, Redux toolkit
+## I have done this project very well. In this project I used skills like React, TailwindCSS, DaisyUI, Redux toolkit
 
 
 
