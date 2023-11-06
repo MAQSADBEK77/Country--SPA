@@ -3,7 +3,7 @@ let clickedClass = "clicked"
 const body = document.body
 const lightTheme = "light"
 const darkTheme = "dark"
-let theme
+let theme;
 if (localStorage) {
   theme = localStorage.getItem("theme")
 }
